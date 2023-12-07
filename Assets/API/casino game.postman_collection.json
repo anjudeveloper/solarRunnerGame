@@ -1,0 +1,86 @@
+{
+	"info": {
+		"_postman_id": "ca28b65b-5289-496e-b512-7ed13055de7c",
+		"name": "casino game",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6840432"
+	},
+	"item": [
+		{
+			"name": "Points To Coins Copy",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5YTJmMTliNy0zNGVlLTQ5N2UtYmIyZC00YzNkN2MzOWMzMzgiLCJqdGkiOiIxZjFiNjcxYmNhZDY0ZWNjN2ZmYWRmZTQxMTM2YTExMGY4Mzc0OTQwMjZjMjBjZjA4OWNhMGRlZjNjZWFjM2EwOTEyMDVlNDY1ZGJkNTI5ZSIsImlhdCI6MTcwMTM0NTUzMi4yMTE3NjMsIm5iZiI6MTcwMTM0NTUzMi4yMTE3NjcsImV4cCI6MTczMjk2NzkzMi4xOTQzNiwic3ViIjoiNSIsInNjb3BlcyI6W119.ijfSeDPcTli8uHE_SL58P4mF98WcABFbWJy8Q04U4phRf4K4lpDoAHs_bgsBtNqJiCYZYhA93xe4gAk8q6D_YLNM2PdCDoJ3LbsrD-qNp1gXIGgHJl3GBignqF75kkHa_vtzmtlQi8Vk6sG2BkQ0_USA9XTxdt8ue_e9dLkDG2tEdVoOKw6BVgUrjJkvlXANZ7OtgHBmOpj6LaUUJ9vj0MRBRH09yWTnnCfUoK9DeCU9621StP4NxTqoqKb6YQcFUC0R9T8wjAnfcfZ_sMr3xWqgvslbe0GpSEDFSCviGmmIsycVLDSHV8zW_sHD1F5ksim25VXie05QuRhIcVB7Ar-BbMD44tpwn1WgmfBv47pGVVI9xe-pJyY1CpDW0BEDEPiW5JOCmmogTQOufjzLyQjbYtTB5WsHaSixVpuXi3mb6y1JnRj83rY7Rs_JcOCRWBwU5v8MJGMGsjMaH1ZjSZGxK-kvXs33ySgeCtLvEtImGw7hKDGloS6EtJNjuGToAqZJ1hbbZMBUdYZfpwF-UyUGSFHJwyVkasVqvQDdfHcs8fwAwDbOoObklx3Ghx8g3Y1LLoVcnNhjuNpuI6ingFGrXRcQGBV4g9Spche4_ClHHG1wp_aytKzCRV6rb1Ndrcj227IG9xd9woWElaEYXXuTwCI26z4QkqrVTzVPs28",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "points",
+							"value": "2000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{saassy_api_url}}/game/points-to-coins",
+					"host": [
+						"{{saassy_api_url}}"
+					],
+					"path": [
+						"game",
+						"points-to-coins"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buy Life Copy",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5YTJmMTliNy0zNGVlLTQ5N2UtYmIyZC00YzNkN2MzOWMzMzgiLCJqdGkiOiIxZjFiNjcxYmNhZDY0ZWNjN2ZmYWRmZTQxMTM2YTExMGY4Mzc0OTQwMjZjMjBjZjA4OWNhMGRlZjNjZWFjM2EwOTEyMDVlNDY1ZGJkNTI5ZSIsImlhdCI6MTcwMTM0NTUzMi4yMTE3NjMsIm5iZiI6MTcwMTM0NTUzMi4yMTE3NjcsImV4cCI6MTczMjk2NzkzMi4xOTQzNiwic3ViIjoiNSIsInNjb3BlcyI6W119.ijfSeDPcTli8uHE_SL58P4mF98WcABFbWJy8Q04U4phRf4K4lpDoAHs_bgsBtNqJiCYZYhA93xe4gAk8q6D_YLNM2PdCDoJ3LbsrD-qNp1gXIGgHJl3GBignqF75kkHa_vtzmtlQi8Vk6sG2BkQ0_USA9XTxdt8ue_e9dLkDG2tEdVoOKw6BVgUrjJkvlXANZ7OtgHBmOpj6LaUUJ9vj0MRBRH09yWTnnCfUoK9DeCU9621StP4NxTqoqKb6YQcFUC0R9T8wjAnfcfZ_sMr3xWqgvslbe0GpSEDFSCviGmmIsycVLDSHV8zW_sHD1F5ksim25VXie05QuRhIcVB7Ar-BbMD44tpwn1WgmfBv47pGVVI9xe-pJyY1CpDW0BEDEPiW5JOCmmogTQOufjzLyQjbYtTB5WsHaSixVpuXi3mb6y1JnRj83rY7Rs_JcOCRWBwU5v8MJGMGsjMaH1ZjSZGxK-kvXs33ySgeCtLvEtImGw7hKDGloS6EtJNjuGToAqZJ1hbbZMBUdYZfpwF-UyUGSFHJwyVkasVqvQDdfHcs8fwAwDbOoObklx3Ghx8g3Y1LLoVcnNhjuNpuI6ingFGrXRcQGBV4g9Spche4_ClHHG1wp_aytKzCRV6rb1Ndrcj227IG9xd9woWElaEYXXuTwCI26z4QkqrVTzVPs28",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "points",
+							"value": "1000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{saassy_api_url}}/game/buy-life",
+					"host": [
+						"{{saassy_api_url}}"
+					],
+					"path": [
+						"game",
+						"buy-life"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
